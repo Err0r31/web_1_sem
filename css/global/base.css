@@ -1,0 +1,99 @@
+.section {
+  margin-bottom: 5.6rem;
+}
+
+.title {
+  font-size: 2.4rem;
+  line-height: 115%;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.button {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  color: #fff;
+  text-align: center;
+  border-radius: 3rem;
+  padding: 1.1rem;
+  background: linear-gradient(134deg, #11ae88 0%, #2a84ee 100%);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  background: linear-gradient(134deg, #11ae88 30%, #2a84ee 73.23%);
+}
+
+.form-text {
+  margin-bottom: 3rem;
+}
+
+.form-button {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+  border-radius: 3rem;
+  padding: 1.2rem 5.8rem;
+  box-shadow: 0 0 30px 0 #50abdc;
+  background: linear-gradient(134deg, #2a84ee 73%, #11ae88 100%);
+}
+
+.form-input {
+  border-radius: 3rem;
+  background: #fff;
+  border: none;
+  padding: 1.3rem 2.2rem 1.4rem 1.9rem;
+  font-size: 1.6rem;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  margin-bottom: 2rem;
+}
+
+.form-input::placeholder {
+  color: #c3c3c3;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 1600px) {
+  .section {
+    margin-bottom: 10.1rem;
+  }
+
+  .title {
+    font-size: 4.8rem;
+  }
+
+  .form {
+    position: relative;
+    border-radius: 2rem;
+  }
+
+  .form-text {
+    margin-bottom: 4.1rem;
+  }
+
+  .form-button {
+    position: absolute;
+    background: linear-gradient(134deg, #11ae88 0%, #2a84ee 100%);
+    box-shadow: none;
+    padding: 1rem 9.2rem;
+  }
+
+  .form-input {
+    padding: 1.9rem 32rem 1.9rem 2.3rem;
+  }
+
+  .button {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,148 @@
+.header {
+  margin: 2rem 0 4rem;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}
+
+.header__right-wrapper {
+  display: flex;
+  align-items: end;
+  gap: 3.1rem;
+}
+
+.header__description {
+  display: none;
+  font-size: 1.4rem;
+  color: #969eb1;
+}
+
+.header__purple {
+  color: #702a8a;
+}
+
+.header__blue {
+  color: #1065ff;
+}
+
+.header__center-wrapper {
+  display: none;
+  align-items: center;
+  gap: 3.6rem;
+}
+
+.header__text-link {
+  font-size: 1.8rem;
+  color: #212121;
+}
+
+.header__actions {
+  display: flex;
+  gap: 2.2rem;
+  align-items: center;
+}
+
+.header__link-logout {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #212121;
+}
+
+.header__link-text {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  line-height: 125%;
+}
+
+.header__link-login {
+  display: none;
+  font-size: 1.8rem;
+  padding: 1.1rem 3.5rem;
+}
+
+.header__logo {
+  width: 18.7rem;
+  height: 1.8rem;
+}
+
+.header__icon--exit {
+  width: 2.6rem;
+  height: 2.5rem;
+}
+
+.header__icon--burger {
+  width: 3rem;
+  height: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .header__description {
+    display: none;
+  }
+
+  .header__center-wrapper {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .header__text-link {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__description {
+    display: none;
+  }
+
+  .header__link-login {
+    display: block;
+    padding: 1rem 2.5rem;
+  }
+
+  .header__button {
+    display: none;
+  }
+}
+
+@media (min-width: 1600px) {
+  .header__logo {
+    width: 26rem;
+    height: 2.4rem;
+  }
+
+  .header__description {
+    display: block;
+  }
+
+  .header__center-wrapper {
+    display: flex;
+  }
+
+  .header__icon-exit {
+    width: 1.4rem;
+    height: 1.3rem;
+  }
+
+  .header__link-text {
+    display: block;
+  }
+
+  .header__button {
+    display: none;
+  }
+
+  .header__link-login {
+    display: block;
+  }
+}

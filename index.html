@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MPASSISTANT</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <a href="#main" class="skip-link sr-only">Перейти к основному содержимому</a>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__right-wrapper">
+                    <a href="#" class="header__link" aria-label="Логотип">
+                        <svg class="header__logo" role="img" aria-label="Логотип MPASSISTANT" alt="Логотип">
+                            <use xlink:href="images/sprite.svg#icon-logo" aria-hidden="true"></use>
+                        </svg>
+                    </a>
+                    <p class="header__description">
+                        Аналитика и оцифровка продаж <br /> <span class="header__purple">Wildberries</span> и <span
+                            class="header__blue">Ozon</span>
+                    </p>
+                </div>
+
+                <nav class="header__center-wrapper">
+                    <a href="#hero" class="header__text-link" aria-label="О нас">О нас</a>
+                    <a href="#features" class="header__text-link" aria-label="Возможности">Возможности</a>
+                    <a href="#rate" class="header__text-link" aria-label="Тарифы">Тарифы</a>
+                </nav>
+
+                <div class="header__actions">
+                    <a href="#" class="header__link header__link-logout" aria-label="Войти">
+                        <svg class="header__link-icon header__icon header__icon--exit" aria-label="Иконка входа"
+                            aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#icon-exit"></use>
+                        </svg>
+                        <span class="sr-only header__link-text">Вход</span>
+                    </a>
+                    <button class="header__button" type="button" aria-label="Открыть меню">
+                        <svg class="header__button-icon header__icon header__icon--burger" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#icon-burger"></use>
+                        </svg>
+                        <span class="sr-only">Открыть боковое меню</span>
+                    </button>
+                    <a href="#" class="button header__link header__link-login" aria-label="Зарегистрироваться">
+                        Зарегистрироваться
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="section hero" id="#hero" role="region">
+            <div class="container">
+                <div class="hero__title-wrapper">
+                    <h1 class="hero__title">
+                        <span class="hero__title-green">Внутренняя аналитика</span>
+                        и <span class="hero__title-blue">финансовый учёт</span>
+                        для бизнеса на маркетплейсах
+                    </h1>
+                    <picture class="hero__pic">
+                        <source media="(min-width: 768px)" srcset="images/marketplaces-large.png">
+                        <img class="hero__img" src="images/marketplaces-small.png" alt="Маркетплейсс" />
+                    </picture>
+                </div>
+                <img src="images/boxes-large.png" alt="Коробки" class="hero__img-boxes">
+                <p class="hero__description">
+                    Увеличивай прибыль, автоматизируй рутину и экономь время на сборе
+                    и анализе отчётов
+                </p>
+                <form class="form hero__form">
+                    <p class="form-text hero__form-text">
+                        Начните свой 3-дневный пробный период с неограниченным доступом
+                        ко всем возможностям
+                    </p>
+                    <label for="hero-email" class="sr-only hero__form-label">Ваш email</label>
+                    <input type="email" id="hero-email" name="email" class="form-input hero__form-input"
+                        placeholder="Введите ваш email" aria-describedby="email-description" required />
+                    <button type="submit" class="form-button hero__form-button"
+                        aria-label="Попробовать">Попробовать</button>
+                </form>
+                <ul class="hero__stats">
+                    <li class="hero__stats-item">
+                        <span class="hero__stats-number">777</span>
+                        <p class="hero__stats-text">Увеличивай прибыль, автоматизируй рутину и экономь время на сборе
+                            и анализе отчётов</p>
+                    </li>
+                    <li class="hero__stats-item">
+                        <span class="hero__stats-number">5</span>
+                        <p class="hero__stats-text">Увеличивай прибыль, автоматизируй рутину и экономь время на сборе
+                            и анализе отчётов</p>
+                    </li>
+                    <li class="hero__stats-item">
+                        <span class="hero__stats-number">100 000</span>
+                        <p class="hero__stats-text">Увеличивай прибыль, автоматизируй рутину и экономь время на сборе
+                            и анализе отчётов</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section features" id="#features">
+            <div class="container">
+                <h2 class="title features__title">Возможности сервиса</h2>
+                <div class="features__details-wrapper">
+                    <details class="features__details" open>
+                        <summary class="features__summary">
+                            Финансовая аналитика
+                            <svg class="features__summary-icon" aria-label="Иконка стрелки" aria-hidden="true" >
+                                <use xlink:href="images/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </summary>
+                        <div class="features__content">
+                            <div class="features__content-top">
+                                <h3 class="features__subtitle">Инструменты для финансовой аналитики </h3>
+                                <ul class="features__list">
+                                    <li class="features__item">
+                                        Отчёт о прибылях и убытках (P&L)
+                                    </li>
+                                    <li class="features__item">
+                                        Отчёт о движении денежных средств (ДДС)
+                                    </li>
+                                    <li class="features__item">
+                                        Журнал операций
+                                    </li>
+                                    <li class="features__item">Сводка продаж</li>
+                                    <li class="features__item">Учёт самовыкупов</li>
+                                </ul>
+                            </div>
+                            <picture class="features__pic">
+                                <source media="(min-width: 1440px)" srcset="images/capabilities-large.png">
+                                <img class="features__img" src="images/capabilities-small.png" alt="Таблица">
+                            </picture>
+                            <button class="features__button button" type="button"
+                                aria-label="Попробовать бесплатно">Попробовать
+                                бесплатно</button>
+                        </div>
+                    </details>
+                    <details class="features__details">
+                        <summary class="features__summary">
+                            Товарная аналитика
+                            <svg class="features__summary-icon" aria-label="Иконка стрелки" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </summary>
+                        <div class="features__content">
+                            <h3 class="features__subtitle">Товарная аналитика</h3>
+
+                        </div>
+                    </details>
+                    <details class="features__details">
+                        <summary class="features__summary">
+                            Аналитика внутренней рекламы
+                            <svg class="features__summary-icon" aria-label="Иконка стрелки" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </summary>
+                        <div class="features__content">
+                            <h3 class="features__subtitle">Аналитика внутренней рекламы</h3>
+                        </div>
+                    </details>
+                    <details class="features__details">
+                        <summary class="features__summary">
+                            Статистика
+                            <svg class="features__summary-icon" aria-label="Иконка стрелки" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </summary>
+                        <div class="features__content">
+                            <h3 class="features__subtitle">Статистика</h3>
+                        </div>
+                    </details>
+                    <details class="features__details">
+                        <summary class="features__summary">
+                            Инструменты
+                            <svg class="features__summary-icon" aria-label="Иконка стрелки" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </summary>
+                        <div class="features__content">
+                            <h3 class="features__subtitle">Инструменты</h3>
+                        </div>
+                    </details>
+                </div>
+                <form class="form features__form">
+                    <div class="features__form-content">
+                        <h2 class="features__form-title">Начните экономить своё время</h2>
+                        <p class="form-text features__form-description">3-дневный пробный период с неограниченным
+                            доступом ко всем
+                            возможностям</p>
+                        <label for="features-email" class="sr-only features__form-label">Ваш email</label>
+                        <input type="email" id="features-email" name="email" class="form-input features__form-input"
+                            placeholder="Введите ваш email" aria-describedby="email-description" required />
+                        <button type="submit" class="form-button features__form-button"
+                            aria-label="Попробовать">Попробовать</button>
+                    </div>
+                    <picture class="features__form-pic">
+                        <source media="(min-width: 1600px)" srcset="images/clock-large.png">
+                        <img class="features__form-img" src="images/women-1-small.png" alt="Девушка">
+                    </picture>
+                    <img src="images/woman-1-large.png" alt="Девушка" class="features__img-woman">
+                </form>
+            </div>
+        </section>
+
+        <section class="section reports">
+            <div class="container">
+                <div class="reports__wrapper">
+                    <div class="reports__text-wrapper">
+                        <h2 class="title reports__title">Собираем единые отчёты по всем вашим магазинам</h2>
+                        <p class="reports__description">С Mpassistant вы сможете:</p>
+                        <ul class="reports__list">
+                            <li class="reports__item">
+                                <svg class="reports__item-icon" aria-label="Иконка галочки" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#icon-mark"></use>
+                                </svg>
+                                <p class="reports__item-text">Сможете видеть прибыль по всем магазинам и маркетплейсам
+                                    в одном
+                                    месте</p>
+                            </li>
+                            <li class="reports__item">
+                                <svg class="reports__item-icon" aria-label="Иконка галочки" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#icon-mark"></use>
+                                </svg>
+                                <p class="reports__item-text">Не потратите время на сбор данных из нескольких кабинетов
+                                    или маркетплейсов</p>
+                            </li>
+                            <li class="reports__item">
+                                <svg class="reports__item-icon" aria-label="Иконка галочки" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#icon-mark"></use>
+                                </svg>
+                                <p class="reports__item-text">Добавите любое количество магазинов</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="markets">
+                        <div class="markets__brand markets__brand-1">
+                            <svg class="markets__icon" aria-label="Иконка магазина" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#icon-market"></use>
+                            </svg>
+                            <picture class="markets__picture">
+                                <source media="(min-width: 1600px)" srcset="images/logo-ozon-large.png">
+                                <img class="markets__img" src="images/logo-ozon-small.png" alt="Логотип озон">
+                            </picture>
+                        </div>
+                        <div class="markets__brand markets__brand-2">
+                            <svg class="markets__icon" aria-label="Иконка магазина" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#icon-market"></use>
+                            </svg>
+                            <picture class="markets__picture">
+                                <source media="(min-width: 1600px)" srcset="images/logo-ozon-large.png">
+                                <img class="markets__img" src="images/logo-ozon-small.png" alt="Логотип озон">
+                            </picture>
+                        </div>
+                        <div class="markets__brand markets__brand-3">
+                            <svg class="markets__icon" aria-label="Иконка магазина" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#icon-market"></use>
+                            </svg>
+                            <picture class="markets__picture">
+                                <source media="(min-width: 1600px)" srcset="images/logo-wb-large.png">
+                                <img class="markets__img" src="images/logo-wb-small.png" alt="Логотип вб">
+                            </picture>
+                        </div>
+                        <div class="markets__brand markets__brand-4">
+                            <svg class="markets__icon" aria-label="Иконка магазина" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#icon-market"></use>
+                            </svg>
+                            <picture class="markets__picture">
+                                <source media="(min-width: 1600px)" srcset="images/logo-wb-large.png">
+                                <img class="markets__img" src="images/logo-wb-small.png" alt="Логотип вб">
+                            </picture>
+                        </div>
+                        <div class="markets__logo-wrapper">
+                            <svg class="markets__logo" aria-label="Логотип" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#icon-logo"></use>
+                            </svg>
+                        </div>
+                        <svg class="markets__vector markets__vector-1" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#vector-1"></use>
+                        </svg>
+                        <svg class="markets__vector markets__vector--large markets__vector-1-large" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#vector-1-large"></use>
+                        </svg>
+                        <svg class="markets__vector markets__vector-2" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#vector-2"></use>
+                        </svg>
+                        <svg class="markets__vector markets__vector--large markets__vector-2-large" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#vector-2-large"></use>
+                        </svg>
+                        <svg class="markets__vector markets__vector-3" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#vector-3"></use>
+                        </svg>
+                        <svg class="markets__vector markets__vector--large markets__vector-3-large" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#vector-3-large"></use>
+                        </svg>
+                        <svg class="markets__vector markets__vector-4" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#vector-4"></use>
+                        </svg>
+                        <svg class="markets__vector markets__vector--large markets__vector-4-large" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#vector-4-large"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section why">
+            <div class="container">
+                <h2 class="title why__title">Почему выбирают Mpassistant</h2>
+                <ul class="why__list">
+                    <li class="why__item">
+                        <div class="why__item-wrapper">
+                            <svg class="why__item-icon why__item-icon--1" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#icon-scope"></use>
+                            </svg>
+                            <h3 class="why__item-title">Точность данных</h3>
+                        </div>
+                        <p class="why__item-description">
+                            Данные в отчётах сервиса полностью совпадает с данными ваших магазинов на маркетплейсах.
+                        </p>
+                    </li>
+                    <li class="why__item">
+                        <div class="why__item-wrapper">
+                            <svg class="why__item-icon why__item-icon--2" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#icon-analytics"></use>
+                            </svg>
+                            <h3 class="why__item-title">Большой функционал</h3>
+                        </div>
+                        <p class="why__item-description">
+                            Полный набор инструментов для внутренней аналитики для Wildberries и Ozon. Более 10 полезных
+                            отчётов с удобными настраиваемыми фильтрами и параметрами.
+                        </p>
+                    </li>
+                    <li class="why__item">
+                        <div class="why__item-wrapper">
+                            <svg class="why__item-icon why__item-icon--3" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#icon-manual"></use>
+                            </svg>
+                            <h3 class="why__item-title">Лёгкость освоения</h3>
+                        </div>
+                        <p class="why__item-description">
+                            Наши отчёты просты и удобны. Все отчёты имеют подробные инструкции и видео, помогающие легко
+                            читать их и использовать.
+                        </p>
+                    </li>
+                    <li class="why__item">
+                        <div class="why__item-wrapper">
+                            <svg class="why__item-icon why__item-icon--4" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#icon-experience"></use>
+                            </svg>
+                            <h3 class="why__item-title">Подходит всем</h3>
+                        </div>
+                        <p class="why__item-description">
+                            Mpassistant создан селлерами для селлеров. Наш опыт в товарном бизнесе и разработке IT
+                            систем позволил создать полезный и удобный продукт, поэтому он подойдёт как для новичков,
+                            так и для опытных селлеров.
+                        </p>
+                    </li>
+                    <li class="why__item">
+                        <div class="why__item-wrapper">
+                            <svg class="why__item-icon why__item-icon--5" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#icon-document"></use>
+                            </svg>
+                            <h3 class="why__item-title">Конфиденциальность</h3>
+                        </div>
+                        <p class="why__item-description">
+                            Ваша конфиденциальность для нас самый главный приоритет. Все ваши данные надёжно сохранены,
+                            а информация об этом записана в договоре-оферте. По желанию можем заключить дополнительное
+                            соглашение (NDA).
+                        </p>
+                    </li>
+                    <li class="why__item">
+                        <div class="why__item-wrapper">
+                            <svg class="why__item-icon why__item-icon--6" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#icon-service"></use>
+                            </svg>
+                            <h3 class="why__item-title">Служба заботы</h3>
+                        </div>
+                        <p class="why__item-description">
+                            Наша служба заботы готова решить практически любые вопросы и в режиме 24/7.
+                        </p>
+                    </li>
+                </ul>
+                <form class="form why__form">
+                    <div class="why__form-content">
+                        <h2 class="why__form-title">Попробуйте бесплатно</h2>
+                        <p class="form-text why__form-description">
+                            3-дневный пробный период с неограниченным доступом ко всем возможностям
+                        </p>
+                        <label for="why-email" class="sr-only why__form-label">Ваш email</label>
+                        <input type="email" id="why-email" name="email" class="form-input why__form-input"
+                            placeholder="Введите ваш email" aria-describedby="email-description" required />
+                        <button type="submit" class="form-button why__form-button"
+                            aria-label="Попробовать">Попробовать</button>
+                    </div>
+                    <picture class="why__form-pic">
+                        <source media="(min-width: 1600px)" srcset="images/presents-large.png">
+                        <img class="why__form-img" src="images/woman-2-small.png" alt="Девушка">
+                    </picture>
+                    <img class="why__form-woman" src="images/woman-2-large.png" alt="Девушка">
+                </form>
+            </div>
+        </section>
+
+        <section class="section rate" id="rate">
+            <div class="container">
+                <h2 class="title rate__title">Выберите тариф</h2>
+                <!-- <div class="rate__switchers-wrapper"> -->
+                <ul class="rate__switchers">
+                    <li class="rate__switcher">
+                        <input class="rate__input" type="radio" name="month" id="month1" checked>
+                        <label for="month1" class="rate__label">1 месяц</label>
+                    </li>
+                    <li class="rate__switcher">
+                        <input class="rate__input" type="radio" name="month" id="month3">
+                        <label for="month3" class="rate__label">3 месяца</label>
+                    </li>
+                    <li class="rate__switcher">
+                        <input type="radio" name="month" id="month6" class="rate__input">
+                        <label for="month6" class="rate__label">6 месяцев</label>
+                    </li>
+                    <li class="rate__switcher">
+                        <input type="radio" name="month" id="month12" class="rate__input">
+                        <label for="month12" class="rate__label">12 месяцев</label>
+                    </li>
+                </ul>
+                <!-- </div> -->
+                <ul class="rate__list">
+                    <li class="rate__item">
+                        <div class="plan-card plan-card--white">
+                            <h3 class="plan-card__title">Стартовый</h3>
+                            <div class="plan-card__price-wrapper">
+                                <p class="plan-card__price">4 990 ₽</p>
+                            </div>
+                            <div class="plan-card__links">
+                                <a href="#" class="button plan-card__link">Попробовать</a>
+                                <a href="#" class="plan-card__link plan-card__link--border">
+                                    Подробнее
+                                    <svg class="plan-card__icon" aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#icon-more"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="rate__item">
+                        <div class="plan-card">
+                            <h3 class="plan-card__title">Стартовый +</h3>
+                            <div class="plan-card__price-wrapper">
+                                <p class="plan-card__price-old">4 491 ₽/мес</p>
+                                <p class="plan-card__price">13 473 ₽</p>
+                            </div>
+                            <div class="plan-card__links">
+                                <a href="#" class="button plan-card__link">Попробовать</a>
+                                <a href="#" class="plan-card__link plan-card__link--border">
+                                    Подробнее
+                                    <svg class="plan-card__icon" aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#icon-more"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <span class="plan-card__sale">— 10%</span>
+                        </div>
+                    </li>
+                    <li class="rate__item">
+                        <div class="plan-card plan-card--green">
+                            <h3 class="plan-card__title">Профи</h3>
+                            <div class="plan-card__price-wrapper">
+                                <p class="plan-card__price-old">4 241 ₽/мес</p>
+                                <p class="plan-card__price">25 446 ₽</p>
+                            </div>
+                            <div class="plan-card__links">
+                                <a href="#" class="button plan-card__link">Попробовать</a>
+                                <a href="#" class="plan-card__link plan-card__link--border">
+                                    Подробнее
+                                    <svg class="plan-card__icon" aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#icon-more"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <span class="plan-card__sale">- 10%</span>
+                        </div>
+                    </li>
+                    <li class="rate__item rate__item--large">
+                        <div class="plan-card plan-card--large">
+                            <div class="plan-card__content">
+                                <h3 class="plan-card__title">Начинающим селлерам с выручкой</h3>
+                                <div class="plan-card__price-wrapper">
+                                    <p class="plan-card__price-old">до 200 000 ₽/мес</p>
+                                    <p class="plan-card__price">Бесплатно</p>
+                                </div>
+                                <div class="plan-card__links">
+                                    <a href="#" class="button plan-card__link">Попробовать</a>
+                                    <a href="#" class="plan-card__link plan-card__link--border">
+                                        Подробнее
+                                        <svg class="plan-card__icon" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#icon-more"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <picture class="plan-card__pic">
+                                <source media="(min-width: 1600px)" srcset="images/presents-2-large.png">
+                                <img src="images/woman-3-small.png" alt="Девушка с подарками" class="plan-card__img">
+                            </picture>
+                            <img class="plan-card__img plan-card__img--woman" src="images/woman-3-large.png" alt="Девушка">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section reviews">
+            <div class="container">
+                <div class="reviews__title-wrapper">
+                    <h2 class="title reviews__title">Отзывы</h2>
+                    <div class="reviews__arrows">
+                        <button class="reviews__button">
+                            <svg class="reviews__slider-arrow reviews__slider-arrow--prev" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#icon-slider-arrow"></use>
+                            </svg>
+                        </button>
+                        <button class="reviews__button">
+                            <svg class="reviews__slider-arrow reviews__slider-arrow--next" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#icon-slider-arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <ul class="reviews__list">
+                    <li class="reviews__item">
+                        <p class="reviews__text">
+                            Изначально нашёл сервис в поиске Яндекса, когда искал калькулятор unit-экономики товара.
+                            Калькулятор полностью устроил и решил пользоваться самим сайтом. К тому же это было для меня
+                            бесплатно, так как проходил по условиям бесплатного доступа: оборот до 200т.р в месяц. Этого
+                            не встретить на других сайтах, это возможность развиваться на ранних этапах, без вложения
+                            огромных сумм для доступа к подобным сайтам.
+                            Радует поддержка, получал ответы на все вопросы, выслушивали
+                        </p>
+                        <button class="reviews__button" type="button">
+                            Читать полностью
+                            <svg class="reviews__icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#icon-read"></use>
+                            </svg>
+                        </button>
+                        <p class="reviews__author">— Алексей</p>
+                        <svg class="reviews__decoration" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#icon-quotes"></use>
+                        </svg>
+                    </li>
+                    <li class="reviews__item reviews__item--hidden reviews__item--2">
+                        <p class="reviews__text expanded">
+                            Функционал сервиса, тот что есть — полностью устраивает. Хочется ещё автобиддер по ставкам
+                            в рекламных компаниях и цены вам не будет!
+                        </p>
+                        <button class="reviews__button hidden" type="button">
+                            Читать полностью
+                            <svg class="reviews__icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#icon-read"></use>
+                            </svg>
+                        </button>
+                        <p class="reviews__author">— Владислав</p>
+                        <svg class="reviews__decoration" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#icon-quotes"></use>
+                        </svg>
+                    </li>
+                    <li class="reviews__item reviews__item--hidden reviews__item--3">
+                        <p class="reviews__text">
+                            Изначально нашёл сервис в поиске Яндекса, когда искал калькулятор unit-экономики товара.
+                            Калькулятор полностью устроил и решил пользоваться самим сайтом. К тому же это было для меня
+                            бесплатно, так как проходил по условиям бесплатного доступа: оборот до 200т.р в месяц. Этого
+                            не встретить на других сайтах, это возможность развиваться на ранних этапах, без вложения
+                            огромных сумм для доступа к подобным сайтам.
+                            Радует поддержка, получал ответы на все вопросы, выслушивали
+                        </p>
+                        <button class="reviews__button" type="button">
+                            Читать полностью
+                            <svg class="reviews__icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#icon-read"></use>
+                            </svg>
+                        </button>
+                        <p class="reviews__author">— Алексей</p>
+                        <svg class="reviews__decoration" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#icon-quotes"></use>
+                        </svg>
+                    </li>
+                    <li class="reviews__item reviews__item--hidden reviews__item--4">
+                        <p class="reviews__text expanded">
+                            Функционал сервиса, тот что есть — полностью устраивает. Хочется ещё автобиддер по ставкам
+                            в рекламных компаниях и цены вам не будет!
+                        </p>
+                        <button class="reviews__button hidden" type="button">
+                            Читать полностью
+                            <svg class="reviews__icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#icon-read"></use>
+                            </svg>
+                        </button>
+                        <p class="reviews__author">— Владислав</p>
+                        <svg class="reviews__decoration" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#icon-quotes"></use>
+                        </svg>
+                    </li>
+                </ul>
+                <div class="reviews__pagination">
+                    <button type="button" class="reviews__dot active"></button>
+                    <button type="button" class="reviews__dot"></button>
+                    <button type="button" class="reviews__dot"></button>
+                    <button type="button" class="reviews__dot"></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__company">
+                    <a href="#" class="footer__logo">
+                        <svg class="footer__logo-icon" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#icon-logo"></use>
+                        </svg>
+                    </a>
+                    <p class="footer__description">
+                        Аналитика и цифрового продаж <br /><span class="footer__purple">Wildberries</span> и <span
+                            class="footer__blue">Ozon</span>
+                    </p>
+                    <div class="footer__socials">
+                        <a href="#" class="footer__social-link">
+                            <svg class="footer__social-icon footer__social-icon--vk" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#icon-vk"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <svg class="footer__social-icon footer__social-icon--tg" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#icon-tg"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <svg class="footer__social-icon footer__social-icon--youtube" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#icon-youtube"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__nav">
+                    <div class="footer__section">
+                        <h3 class="footer__title">Сервис</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="footer__link">Для кого</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Возможности</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Тарифы</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__section">
+                        <h3 class="footer__title">Клиентам</h3>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">Вход</a></li>
+                            <li><a href="#" class="footer__link">Регистрация</a></li>
+                            <li><a href="#" class="footer__link">Восстановление пароля</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__section footer__section--large">
+                        <h3 class="footer__title">Документы</h3>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">Пользовательское соглашение</a></li>
+                            <li><a href="#" class="footer__link">Политика конфиденциальности</a></li>
+                            <li><a href="#" class="footer__link">Публичная оферта</a></li>
+                            <li><a href="#" class="footer__link">Использование cookie</a></li>
+                            <li><a href="#" class="footer__link">Техническая поддержка</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__payment">
+                    <picture class="footer__pic">
+                        <source media="(min-width: 1600px)" srcset="images/modulbank-small.png">
+                        <img src="images/modulbank-small.png" alt="Логотип МодульБанка" class="footer__payment-icon">
+                    </picture>
+                    <picture class="footer__pic">
+                        <source media="(min-width: 1600px)" srcset="images/visa-small.png">
+                        <img src="images/visa-small.png" alt="Логотип VISA" class="footer__payment-icon">
+                    </picture>
+                    <picture class="footer__pic">
+                        <source media="(min-width: 1600px)" srcset="images/mastercard-small.png">
+                        <img src="images/mastercard-small.png" alt="Логотип MasterCard" class="footer__payment-icon">
+                    </picture>
+                    <picture class="footer__pic">
+                        <source media="(min-width: 1600px)" srcset="images/maestro-small.png">
+                        <img src="images/maestro-small.png" alt="Логотип Maestro" class="footer__payment-icon">
+                    </picture>
+                    <picture class="footer__pic">
+                        <source media="(min-width: 1600px)" srcset="images/mir-small.png">
+                        <img src="images/mir-small.png" alt="Логотип МИР" class="footer__payment-icon">
+                    </picture>
+                </div>
+                <div class="footer__copyright">
+                    <p class="footer__watermark">© 2022–2023 Mpassistant</p>
+                    <p class="footer__info">Информация, размещённая на сайте, не является публичной офертой</p>
+                    <p class="footer__redesign">
+                        Редизайн сайта
+                        <a href="#" class="footer__developer">Turkuletsdesign</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
