@@ -80,7 +80,7 @@
 
 .features__item::before {
   content: "";
-  display: inline-block;
+  display: block;
   width: 6px;
   height: 6px;
   border-radius: 50%;

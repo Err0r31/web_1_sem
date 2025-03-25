@@ -19,6 +19,11 @@
   border-radius: 3rem;
   padding: 1.1rem;
   background: linear-gradient(134deg, #11ae88 0%, #2a84ee 100%);
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: linear-gradient(134deg, #21be98 0%, #3a94fe 100%)
 }
 
 .form {
@@ -43,6 +48,12 @@
   padding: 1.2rem 5.8rem;
   box-shadow: 0 0 30px 0 #50abdc;
   background: linear-gradient(134deg, #2a84ee 73%, #11ae88 100%);
+  transition: all 0.3s ease;
+}
+
+.form-button:hover {
+  background: linear-gradient(134deg, #3a94fe 73%, #21be98 100%);
+  box-shadow: 0 0 40px 0 #60bbec
 }
 
 .form-input {
